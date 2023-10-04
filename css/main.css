@@ -1,0 +1,131 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #000003;
+}
+
+* {
+    box-sizing: border-box;
+}
+div{
+    display: flex;
+    /* border: 1px solid red; */
+}
+p{
+    font-family: 'Iceland';
+    font-family: 'Big Shoulders Display';
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    line-height: 1.3;
+    margin:0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.4em;
+    color: white;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    /* word-break: break-all; */
+}
+.left-head {
+    justify-content: flex-start;
+}
+.center-head{
+    justify-content: center;
+}
+.right-head{
+    justify-content: flex-end;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left-main{
+    margin-right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(90deg,black, rgba(188, 39, 39, 0.256), black);
+}
+.right-main{
+    flex-direction: column;
+    padding: 1rem 5rem;
+    background: linear-gradient(90deg,black, rgba(188, 39, 39, 0.256), black);
+    border: 1px solid #4141415f;
+}
+.center{
+    margin-top: 0px;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.photo{
+    background-size: cover; 
+    border: 1px solid #E84A4A;
+    border-radius: 0px 15px 0px 15px;
+    width: 13rem;
+    padding: 0.3rem;
+}
+.left-block{
+    margin: 1rem 0rem 0rem 0rem;
+}
+.decor{
+    text-decoration:none;
+}   
+.buttom{
+    border: 1px solid #E84A4A;
+    border-radius: 15px 0px 15px 0px;
+    padding: 5px 20px;  
+    width: 12rem;
+}
+.buttom:hover {
+    background-color: #E84A4A;
+}
+.box{
+    background-color: #E84A4A;
+    justify-content: space-between;
+}
+.boxs{
+    justify-content: space-between;
+    flex-direction: row;
+}
+.blackbox{
+    background-color: #000003;
+    border-radius: 10px 0px 0px;
+    width: 49%;
+    padding: 10px;
+    margin: 10px 0px;
+    flex-direction: column;
+}
+.colortext{
+    color: #E84A4A;
+}
+.photofr{
+    width: 9%;
+}
+.border{
+    border: 1px solid #E84A4A;
+    padding: 3px;
+    justify-content: space-between;
+}
+@media screen and (max-width:800px) {
+    .left-main {
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .right-main {
+        padding: 0px;
+    }
+}
